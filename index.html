@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">DIGITAL TECHNOLOGIES</div>
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cta" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Start a Project</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content" data-animate>
+        <p class="eyebrow">Organisation · Maroc</p>
+        <h1>Building resilient digital experiences for ambitious organisations.</h1>
+        <p class="lede">
+          DIGITAL TECHNOLOGIES is a developer-first organisation crafting secure, scalable, and modern solutions.
+          We connect strategy, design, and engineering to ship products that last.
+        </p>
+        <div class="hero__actions">
+          <a class="button primary" href="#services">See what we do</a>
+          <a class="button ghost" href="#credentials">Verify credentials</a>
+        </div>
+      </div>
+      <div class="hero__card" data-animate>
+        <div class="badge">Developer Account</div>
+        <h3>DIGITAL TECHNOLOGIES</h3>
+        <dl>
+          <div class="row">
+            <dt>Type</dt>
+            <dd>Organisation</dd>
+          </div>
+          <div class="row">
+            <dt>Developer ID</dt>
+            <dd>8447744002322115143</dd>
+          </div>
+          <div class="row">
+            <dt>Developer Name</dt>
+            <dd>DIGITAL TECHNOLOGIES</dd>
+          </div>
+          <div class="row">
+            <dt>Site Web</dt>
+            <dd><a href="https://digitaltechnologies.tech/" target="_blank" rel="noreferrer">digitaltechnologies.tech</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="panel" id="about" data-animate>
+      <div class="panel__content">
+        <div class="label">Who we are</div>
+        <h2>Engineering clarity in a noisy digital world.</h2>
+        <p>
+          From the heart of Maroc, DIGITAL TECHNOLOGIES delivers dependable digital products tailored to organisations.
+          We keep teams aligned with transparent communication, measurable outcomes, and a focus on sustainable technology choices.
+        </p>
+        <div class="grid stats">
+          <div>
+            <p class="stat__number">100%</p>
+            <p class="stat__label">Organisation-focused delivery</p>
+          </div>
+          <div>
+            <p class="stat__number">24/7</p>
+            <p class="stat__label">Security-first mindset</p>
+          </div>
+          <div>
+            <p class="stat__number">Multi-stack</p>
+            <p class="stat__label">Cloud, web, and mobile solutions</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel__visual">
+        <div class="glass">
+          <p class="label">Headquarters</p>
+          <h3>DOUAR AIT BOUNIT<br>HAD ABADALLAH RHIATE - 42051<br>Maroc (MA)</h3>
+          <p class="note">Proudly building for global impact with local precision.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel split" id="services" data-animate>
+      <div class="label">What we do</div>
+      <h2>Strategy to ship — a seamless arc from concept to scale.</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>Digital Product Engineering</h3>
+          <p>Design, build, and maintain modern web and mobile applications with strong UX foundations and robust infrastructure.</p>
+        </article>
+        <article class="card">
+          <h3>Cloud & Platform</h3>
+          <p>Deploy scalable architectures, automation pipelines, and observability that keep services fast, reliable, and secure.</p>
+        </article>
+        <article class="card">
+          <h3>Advisory & Enablement</h3>
+          <p>Workshops, audits, and capability building to align stakeholders, reduce risk, and accelerate delivery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel credentials" id="credentials" data-animate>
+      <div class="label">Credentials</div>
+      <h2>Verified developer account details.</h2>
+      <div class="credential-grid">
+        <div class="credential">
+          <p class="muted">Type de compte</p>
+          <p class="value">Organisation</p>
+        </div>
+        <div class="credential">
+          <p class="muted">ID du compte de développeur</p>
+          <p class="value">8447744002322115143</p>
+        </div>
+        <div class="credential">
+          <p class="muted">Nom du développeur</p>
+          <p class="value">DIGITAL TECHNOLOGIES</p>
+        </div>
+        <div class="credential">
+          <p class="muted">Adresse</p>
+          <p class="value">DOUAR AIT BOUNIT, HAD ABADALLAH RHIATE - 42051, Maroc (MA)</p>
+        </div>
+        <div class="credential">
+          <p class="muted">Organisation</p>
+          <p class="value">DIGITAL TECHNOLOGIES</p>
+        </div>
+        <div class="credential">
+          <p class="muted">Site Web</p>
+          <p class="value"><a href="https://digitaltechnologies.tech/" target="_blank" rel="noreferrer">digitaltechnologies.tech</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel contact" id="contact" data-animate>
+      <div>
+        <div class="label">Contact</div>
+        <h2>Ready to build together?</h2>
+        <p>Share a challenge, request a capability review, or invite us to collaborate on your next digital project.</p>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:contact@digitaltechnologies.tech">contact@digitaltechnologies.tech</a>
+          <a class="button ghost" href="https://digitaltechnologies.tech/" target="_blank" rel="noreferrer">Visit website</a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <label>
+          Project or idea
+          <textarea name="message" required placeholder="Describe the outcome you want, timelines, and constraints."></textarea>
+        </label>
+        <label>
+          Your email
+          <input name="email" type="email" required placeholder="you@example.com">
+        </label>
+        <button type="submit" class="button primary full">Send</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="logo">DIGITAL TECHNOLOGIES</p>
+      <p class="muted">Crafting secure, scalable experiences from Maroc to the world.</p>
+    </div>
+    <div class="footer__meta">
+      <p>Developer ID: 8447744002322115143</p>
+      <a href="https://digitaltechnologies.tech/" target="_blank" rel="noreferrer">digitaltechnologies.tech</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
