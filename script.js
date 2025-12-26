@@ -1,7 +1,7 @@
 function handleSubmit(event) {
   event.preventDefault();
   const statusEl = document.getElementById('form-status');
-  statusEl.textContent = 'Thanks — your note is queued. We will respond soon.';
+  statusEl.textContent = 'Thanks - your note is queued. We will respond soon.';
   event.target.reset();
 }
 
