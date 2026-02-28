@@ -1,248 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - Digital Technologies – Offline Tools</title>
-  <style>
-    :root{
-      --bg1:#0b1220;
-      --bg2:#0a2a43;
-      --card:#0f1b2d;
-      --text:#e9eef7;
-      --muted:#b7c3d6;
-      --line:rgba(255,255,255,.12);
-      --accent:#4da3ff;
-      --accent2:#6ee7ff;
-      --good:#2dd4bf;
-      --shadow: 0 18px 55px rgba(0,0,0,.45);
-      --radius: 18px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 600px at 15% 10%, rgba(109,240,255,.15), transparent 60%),
-        radial-gradient(900px 500px at 85% 15%, rgba(77,163,255,.18), transparent 60%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
-      min-height:100vh;
-      padding:28px 16px;
-    }
-    .wrap{max-width:980px;margin:0 auto}
-    .top{
-      display:flex; gap:16px; align-items:center; justify-content:space-between;
-      margin-bottom:18px;
-    }
-    .brand{
-      display:flex; gap:12px; align-items:center;
-    }
-    .logo{
-      width:44px;height:44px;border-radius:14px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 10px 25px rgba(77,163,255,.25);
-      position:relative;
-    }
-    .logo:after{
-      content:"DT";
-      position:absolute; inset:0;
-      display:flex; align-items:center; justify-content:center;
-      font-weight:800; letter-spacing:.5px;
-      color:#06101f;
-    }
-    h1{font-size:28px;margin:0}
-    .subtitle{color:var(--muted); margin:4px 0 0; font-size:14px}
-    .pill{
-      font-size:12px; color:var(--muted);
-      border:1px solid var(--line);
-      padding:8px 10px; border-radius:999px;
-      background: rgba(255,255,255,.04);
-      backdrop-filter: blur(8px);
-      white-space:nowrap;
-    }
-    .card{
-      background: rgba(15,27,45,.78);
-      border:1px solid var(--line);
-      box-shadow: var(--shadow);
-      border-radius: var(--radius);
-      overflow:hidden;
-    }
-    .header{
-      padding:18px 18px 14px;
-      border-bottom:1px solid var(--line);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.06), transparent);
-    }
-    .meta{
-      display:flex; flex-wrap:wrap; gap:10px;
-      margin-top:10px;
-      color:var(--muted);
-      font-size:13px;
-    }
-    .meta span{
-      padding:7px 10px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      background: rgba(255,255,255,.03);
-    }
-    .content{padding:18px}
-    h2{
-      margin:18px 0 10px;
-      font-size:18px;
-      letter-spacing:.2px;
-    }
-    p{color:var(--muted); line-height:1.7; margin:10px 0}
-    ul{margin:10px 0 0 18px; color:var(--muted); line-height:1.8}
-    .notice{
-      margin:14px 0;
-      padding:12px 14px;
-      border-radius:14px;
-      border:1px solid rgba(45,212,191,.25);
-      background: rgba(45,212,191,.08);
-      color: #d9fffb;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:12px;
-      margin-top:12px;
-    }
-    @media (min-width: 860px){
-      .grid{grid-template-columns: 1fr 1fr;}
-    }
-    .box{
-      border:1px solid var(--line);
-      border-radius:16px;
-      padding:14px 14px;
-      background: rgba(255,255,255,.03);
-    }
-    .box b{color:var(--text)}
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .footer{
-      padding:16px 18px;
-      border-top:1px solid var(--line);
-      color:var(--muted);
-      font-size:13px;
-      display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between;
-      background: rgba(255,255,255,.02);
-    }
-    .small{font-size:12px;color:var(--muted)}
-    .kbd{
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-      font-size:12px;
-      padding:2px 6px;
-      border-radius:8px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      color:var(--text);
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIGITAL TECHNOLOGIES Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #f4f7fb;
+            --surface: #ffffff;
+            --surface-soft: #f8fafc;
+            --text: #0f172a;
+            --muted: #475569;
+            --border: #dbe3ef;
+            --brand: #0b6bcb;
+            --brand-dark: #084f97;
+            --ok-bg: #e8f7ef;
+            --ok-text: #166534;
+            --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 10% 0%, #dbeafe 0%, transparent 40%),
+                radial-gradient(circle at 90% 0%, #e0e7ff 0%, transparent 36%),
+                var(--bg);
+        }
+
+        .wrap {
+            max-width: 920px;
+            margin: 40px auto;
+            padding: 0 18px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+            color: #fff;
+            border-radius: 18px;
+            padding: 30px 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: 32px;
+            line-height: 1.2;
+            letter-spacing: 0.2px;
+        }
+
+        .meta {
+            margin: 0;
+            opacity: 0.95;
+            font-size: 15px;
+        }
+
+        .badges {
+            margin-top: 16px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            background: rgba(255, 255, 255, 0.14);
+            color: #fff;
+            padding: 7px 11px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            margin-top: 16px;
+            padding: 22px;
+            box-shadow: 0 5px 16px rgba(15, 23, 42, 0.05);
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 21px;
+            line-height: 1.25;
+        }
+
+        p { margin: 0 0 12px; }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li { margin: 6px 0; }
+
+        .summary {
+            border-left: 4px solid #22c55e;
+            background: var(--ok-bg);
+            color: var(--ok-text);
+            padding: 14px 14px 14px 16px;
+            border-radius: 10px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .contact {
+            background: var(--surface-soft);
+            border: 1px dashed var(--border);
+        }
+
+        a {
+            color: var(--brand);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus-visible {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+            margin: 16px 0 8px;
+        }
+
+        @media (max-width: 640px) {
+            .wrap { margin: 24px auto; }
+            .hero { padding: 24px 18px; border-radius: 14px; }
+            .hero h1 { font-size: 27px; }
+            .card { padding: 18px; border-radius: 14px; }
+            h2 { font-size: 19px; }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div>
-          <h1>Privacy Policy</h1>
-          <div class="subtitle">Digital Technologies – Offline Tools</div>
-        </div>
-      </div>
-      <div class="pill">Last updated: <span class="kbd">2026-02-26</span></div>
-    </div>
+    <main class="wrap">
+        <section class="hero">
+            <h1>Privacy Policy</h1>
+            <p class="meta"><strong>App:</strong> DIGITAL TECHNOLOGIES</p>
+            <p class="meta"><strong>Developer:</strong> DIGITAL TECHNOLOGIES</p>
+            <p class="meta"><strong>Effective date:</strong> February 25, 2026</p>
+            <div class="badges">
+                <span class="badge">Works Fully Offline</span>
+                <span class="badge">No Account Required</span>
+                <span class="badge">No Ads or Tracking</span>
+            </div>
+        </section>
 
-    <div class="card">
-      <div class="header">
-        <p style="margin:0;color:var(--muted)">
-          This app is designed to work locally on your device. We do not operate an app backend server for this app.
-        </p>
-        <div class="meta">
-          <span>Offline-first</span>
-          <span>No account required</span>
-          <span>No analytics</span>
-          <span>No ads SDK</span>
-        </div>
-      </div>
+        <section class="card">
+            <h2>Overview</h2>
+            <p>DIGITAL TECHNOLOGIES is designed to work fully offline. No account is required.</p>
+            <div class="summary">We do not collect or share personal data. Your app content stays on your device unless you choose to export notes.</div>
+        </section>
 
-      <div class="content">
-        <div class="notice">
-          <b>Summary:</b> We do not collect or share personal data. Any notes you create stay on your device.
-        </div>
-
-        <h2>1) Data Collection</h2>
-        <p>
-          Digital Technologies – Offline Tools <b>does not collect, store, process, or transmit</b> personal data.
-        </p>
-
-        <h2>2) Offline Functionality & Local Storage</h2>
-        <p>
-          The app works fully offline. Any content you enter (such as notes) is saved <b>locally on your device</b>.
-          We do not have access to this content.
-        </p>
-
-        <h2>3) Third-Party Services</h2>
-        <p>
-          The app does not use third-party analytics, advertising SDKs, tracking technologies, or external servers.
-        </p>
-
-        <div class="grid">
-          <div class="box">
-            <b>What we do</b>
+        <section class="card">
+            <h2>Data Handling</h2>
             <ul>
-              <li>Provide offline checklists and note-taking features.</li>
-              <li>Store your notes locally on your device (device storage).</li>
+                <li>The app does not collect personal data.</li>
+                <li>The app does not transmit user data over the internet.</li>
+                <li>The app does not share data with third parties.</li>
+                <li>The app does not include ads, analytics, or tracking SDKs.</li>
+                <li>The app does not request any dangerous runtime permissions from users.</li>
             </ul>
-          </div>
-          <div class="box">
-            <b>What we don’t do</b>
+        </section>
+
+        <section class="card">
+            <h2>What Is Stored Locally</h2>
+            <p>The following content is stored only on your device:</p>
             <ul>
-              <li>No account creation or login.</li>
-              <li>No data selling or sharing.</li>
-              <li>No background tracking.</li>
+                <li>Saved notes</li>
+                <li>Checklist selections</li>
+                <li>Favorite guide topics</li>
             </ul>
-          </div>
-        </div>
+        </section>
 
-        <h2>4) Permissions</h2>
-        <p>
-          The app requests only the minimum permissions required for core functionality.
-          If the app does not require a permission, it is not used.
-        </p>
+        <section class="card">
+            <h2>Exports</h2>
+            <p>You can export notes as <code>.txt</code> files using the Android system file picker. Export is optional and initiated only by the user.</p>
+            <ul>
+                <li>Exported files are saved in the location you choose.</li>
+                <li>Exported files are outside app storage and are not removed by app uninstall.</li>
+            </ul>
+        </section>
 
-        <h2>5) Data Sharing</h2>
-        <p>
-          We do not share user data with any third party because no user data is collected or transmitted.
-        </p>
+        <section class="card">
+            <h2>Retention and Deletion</h2>
+            <p>Data remains on your device until you remove it.</p>
+            <ul>
+                <li>Delete individual notes from the Notes screen.</li>
+                <li>Reset checklist items from the Checklist screen.</li>
+                <li>Remove favorites from topic screens or the Favorites screen.</li>
+                <li>With backup disabled, uninstalling the app removes local app storage data from this device. Exported <code>.txt</code> files are not removed.</li>
+            </ul>
+        </section>
 
-        <h2>6) Security</h2>
-        <p>
-          Since we do not collect or transmit personal data, there is no remote storage of user information by us.
-          Your locally stored content remains on your device.
-        </p>
+        <section class="card contact">
+            <h2>Contact</h2>
+            <p>For privacy questions, contact: <a href="mailto:kiravolkov221@gmail.com">kiravolkov221@gmail.com</a></p>
+        </section>
 
-        <h2>7) Changes to this Policy</h2>
-        <p>
-          If this policy changes in the future, the updated version will be published on this page with a new “Last updated” date.
-        </p>
-
-        <h2>8) Contact</h2>
-        <p>
-          If you have any questions, contact us at:
-          <a href="mailto:kiravolkov221@gmail.com">kiravolkov221@gmail.com</a>
-        </p>
-
-        <p class="small">
-          Note: This app provides general informational and note-taking tools only. It does not perform professional diagnostics or repairs.
-        </p>
-      </div>
-
-      <div class="footer">
-        <div>© 2026 Digital Technologies</div>
-        <div class="small">Email: <a href="mailto:kiravolkov221@gmail.com">kiravolkov221@gmail.com</a></div>
-      </div>
-    </div>
-  </div>
+        <p class="footer">&copy; 2026 DIGITAL TECHNOLOGIES</p>
+    </main>
 </body>
 </html>
